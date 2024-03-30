@@ -1,0 +1,126 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyP0BJiQV9RUyD6yeQC6Jehs",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/FaisalDev1v1/Dev-Challenge/blob/main/Task%2002\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "nh1izS_lQvnK",
+        "outputId": "7942ff34-d97e-4278-ac28-d91ecf9c1510"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "[{'Country': 'World', 'Population': '8,097,611,000'}, {'Country': 'China', 'Population': '1,409,670,000'}, {'Country': '1,392,329,000', 'Population': '17.2%'}, {'Country': 'United States', 'Population': '335,893,238'}, {'Country': 'Indonesia', 'Population': '279,118,866'}, {'Country': 'Pakistan', 'Population': '241,499,431'}, {'Country': 'Nigeria', 'Population': '223,800,000'}, {'Country': 'Brazil', 'Population': '203,080,756'}, {'Country': 'Bangladesh', 'Population': '169,828,911'}, {'Country': 'Russia', 'Population': '146,203,613'}, {'Country': 'Mexico', 'Population': '129,625,968'}, {'Country': 'Japan', 'Population': '123,990,000'}, {'Country': 'Philippines', 'Population': '112,892,781'}, {'Country': 'Ethiopia', 'Population': '107,334,000'}, {'Country': 'Egypt', 'Population': '104,462,545'}, {'Country': 'Vietnam', 'Population': '100,300,000'}, {'Country': 'Democratic Republic of the Congo', 'Population': '95,370,000'}, {'Country': 'Turkey', 'Population': '85,372,377'}, {'Country': 'Germany', 'Population': '84,607,016'}, {'Country': 'Iran', 'Population': '84,055,000'}, {'Country': 'France', 'Population': '68,381,000'}, {'Country': 'Thailand', 'Population': '68,263,022'}, {'Country': 'United Kingdom', 'Population': '67,596,281'}, {'Country': 'South Africa', 'Population': '62,027,503'}, {'Country': 'Tanzania', 'Population': '61,741,120'}, {'Country': 'Italy', 'Population': '58,909,449'}, {'Country': 'Myanmar', 'Population': '55,770,232'}, {'Country': 'Colombia', 'Population': '52,695,952'}, {'Country': 'Kenya', 'Population': '51,526,000'}, {'Country': 'South Korea', 'Population': '51,303,688'}, {'Country': 'Spain', 'Population': '48,592,909'}, {'Country': 'Argentina', 'Population': '46,654,581'}, {'Country': 'Uganda', 'Population': '45,562,000'}, {'Country': 'Algeria', 'Population': '45,400,000'}, {'Country': 'Iraq', 'Population': '43,324,000'}, {'Country': 'Sudan', 'Population': '41,984,500'}, {'Country': 'Canada', 'Population': '40,800,000'}, {'Country': 'Poland', 'Population': '37,635,000'}, {'Country': 'Morocco', 'Population': '37,022,000'}, {'Country': 'Ukraine', 'Population': '36,700,000'}, {'Country': 'Uzbekistan', 'Population': '36,599,764'}, {'Country': 'Afghanistan', 'Population': '34,262,840'}, {'Country': 'Angola', 'Population': '34,094,077'}, {'Country': 'Peru', 'Population': '33,396,698'}, {'Country': 'Malaysia', 'Population': '33,379,500'}, {'Country': 'Mozambique', 'Population': '32,419,747'}, {'Country': 'Saudi Arabia', 'Population': '32,175,224'}, {'Country': 'Yemen', 'Population': '31,888,698'}, {'Country': 'Ghana', 'Population': '30,832,019'}, {'Country': 'Ivory Coast', 'Population': '29,389,150'}, {'Country': 'Nepal', 'Population': '29,164,578'}, {'Country': 'Venezuela', 'Population': '28,302,000'}, {'Country': 'Cameroon', 'Population': '28,088,845'}, {'Country': 'Madagascar', 'Population': '26,923,353'}, {'Country': 'Australia', 'Population': '26,821,557'}, {'Country': 'North Korea', 'Population': '25,660,000'}, {'Country': 'Niger', 'Population': '25,369,415'}, {'Country': 'Taiwan', 'Population': '23,420,442'}, {'Country': 'Syria', 'Population': '22,923,000'}, {'Country': 'Burkina Faso', 'Population': '22,752,315'}, {'Country': 'Mali', 'Population': '22,395,489'}, {'Country': 'Sri Lanka', 'Population': '22,037,000'}, {'Country': 'Malawi', 'Population': '21,507,723'}, {'Country': 'Kazakhstan', 'Population': '20,033,546'}, {'Country': 'Chile', 'Population': '19,960,889'}, {'Country': 'Zambia', 'Population': '19,610,769'}, {'Country': 'Romania', 'Population': '19,051,562'}, {'Country': 'Senegal', 'Population': '18,275,743'}, {'Country': 'Somalia', 'Population': '18,143,379'}, {'Country': 'Netherlands', 'Population': '17,947,684'}, {'Country': 'Guatemala', 'Population': '17,602,431'}, {'Country': 'Chad', 'Population': '17,414,717'}, {'Country': 'Cambodia', 'Population': '17,091,464'}, {'Country': 'Ecuador', 'Population': '16,938,986'}, {'Country': 'Zimbabwe', 'Population': '15,178,979'}, {'Country': 'South Sudan', 'Population': '14,746,494'}, {'Country': 'Guinea', 'Population': '13,261,638'}, {'Country': 'Rwanda', 'Population': '13,246,394'}, {'Country': 'Burundi', 'Population': '12,837,740'}, {'Country': 'Benin', 'Population': '12,606,998'}, {'Country': 'Bolivia', 'Population': '12,006,031'}, {'Country': 'Tunisia', 'Population': '11,850,232'}, {'Country': 'Belgium', 'Population': '11,810,018'}, {'Country': 'Papua New Guinea', 'Population': '11,781,559'}, {'Country': 'Haiti', 'Population': '11,743,017'}, {'Country': 'Jordan', 'Population': '11,302,000'}, {'Country': 'Cuba', 'Population': '11,089,511'}, {'Country': 'Czech Republic', 'Population': '10,882,235'}, {'Country': 'Dominican Republic', 'Population': '10,760,028'}, {'Country': 'Sweden', 'Population': '10,551,707'}, {'Country': 'Portugal', 'Population': '10,467,366'}, {'Country': 'Greece', 'Population': '10,413,982'}, {'Country': 'Azerbaijan', 'Population': '10,151,517'}, {'Country': 'Tajikistan', 'Population': '10,077,600'}, {'Country': 'Israel', 'Population': '9,867,000'}, {'Country': 'Honduras', 'Population': '9,745,149'}, {'Country': 'Hungary', 'Population': '9,597,085'}, {'Country': 'United Arab Emirates', 'Population': '9,282,410'}, {'Country': 'Belarus', 'Population': '9,200,617'}, {'Country': 'Austria', 'Population': '9,159,993'}, {'Country': 'Switzerland', 'Population': '8,931,306'}, {'Country': 'Sierra Leone', 'Population': '8,494,260'}, {'Country': 'Togo', 'Population': '8,095,498'}, {'Country': 'Hong Kong (China)', 'Population': '7,498,100'}, {'Country': 'Laos', 'Population': '7,443,000'}, {'Country': 'Kyrgyzstan', 'Population': '7,100,000'}, {'Country': 'Turkmenistan', 'Population': '7,057,841'}, {'Country': 'Libya', 'Population': '6,931,061'}, {'Country': 'El Salvador', 'Population': '6,884,888'}, {'Country': 'Nicaragua', 'Population': '6,733,763'}, {'Country': 'Serbia', 'Population': '6,641,197'}, {'Country': 'Bulgaria', 'Population': '6,447,710'}, {'Country': 'Republic of the Congo', 'Population': '6,142,180'}, {'Country': 'Paraguay', 'Population': '6,109,644'}, {'Country': 'Denmark', 'Population': '5,961,249'}, {'Country': 'Singapore', 'Population': '5,917,600'}, {'Country': 'Central African Republic', 'Population': '5,633,412'}, {'Country': 'Finland', 'Population': '5,574,011'}, {'Country': 'Norway', 'Population': '5,550,203'}, {'Country': 'Lebanon', 'Population': '5,490,000'}, {'Country': 'Palestine', 'Population': '5,483,450'}, {'Country': 'Slovakia', 'Population': '5,426,468'}, {'Country': 'Ireland', 'Population': '5,281,600'}, {'Country': 'New Zealand', 'Population': '5,305,600'}, {'Country': 'Costa Rica', 'Population': '5,262,225'}, {'Country': 'Liberia', 'Population': '5,248,621'}, {'Country': 'Oman', 'Population': '5,113,071'}, {'Country': 'Kuwait', 'Population': '4,670,713'}, {'Country': 'Mauritania', 'Population': '4,475,683'}, {'Country': 'Panama', 'Population': '4,064,780'}, {'Country': 'Croatia', 'Population': '3,855,641'}, {'Country': 'Eritrea', 'Population': '3,748,902'}, {'Country': 'Georgia', 'Population': '3,736,400'}, {'Country': 'Mongolia', 'Population': '3,457,548'}, {'Country': 'Uruguay', 'Population': '3,444,263'}, {'Country': 'Bosnia and Herzegovina', 'Population': '3,277,082'}, {'Country': 'Puerto Rico (US)', 'Population': '3,205,691'}, {'Country': 'Armenia', 'Population': '2,981,200'}, {'Country': 'Lithuania', 'Population': '2,886,515'}, {'Country': 'Jamaica', 'Population': '2,825,544'}, {'Country': 'Albania', 'Population': '2,761,785'}, {'Country': 'Qatar', 'Population': '2,656,032'}, {'Country': 'Namibia', 'Population': '2,641,857'}, {'Country': 'Moldova', 'Population': '2,512,758'}, {'Country': 'Gambia', 'Population': '2,417,471'}, {'Country': 'Botswana', 'Population': '2,410,338'}, {'Country': 'Lesotho', 'Population': '2,306,000'}, {'Country': 'Gabon', 'Population': '2,233,272'}, {'Country': 'Slovenia', 'Population': '2,123,103'}, {'Country': 'Latvia', 'Population': '1,872,500'}, {'Country': 'North Macedonia', 'Population': '1,832,696'}, {'Country': 'Guinea-Bissau', 'Population': '1,781,308'}, {'Country': 'Kosovo', 'Population': '1,762,220'}, {'Country': 'Bahrain', 'Population': '1,577,059'}, {'Country': 'Equatorial Guinea', 'Population': '1,558,160'}, {'Country': 'Trinidad and Tobago', 'Population': '1,367,510'}, {'Country': 'Estonia', 'Population': '1,366,491'}, {'Country': 'East Timor', 'Population': '1,354,662'}, {'Country': 'Mauritius', 'Population': '1,261,041'}, {'Country': 'Eswatini', 'Population': '1,223,362'}, {'Country': 'Djibouti', 'Population': '1,001,454'}, {'Country': 'Cyprus', 'Population': '918,100'}, {'Country': 'Fiji', 'Population': '893,468'}, {'Country': 'Bhutan', 'Population': '770,276'}, {'Country': 'Comoros', 'Population': '758,316'}, {'Country': 'Guyana', 'Population': '743,699'}, {'Country': 'Solomon Islands', 'Population': '734,887'}, {'Country': 'Macau (China)', 'Population': '681,300'}, {'Country': 'Luxembourg', 'Population': '660,809'}, {'Country': 'Montenegro', 'Population': '616,695'}, {'Country': 'Suriname', 'Population': '616,500'}, {'Country': '[disputed  – discuss] Western Sahara', 'Population': '587,259'}, {'Country': 'Malta', 'Population': '519,562'}, {'Country': 'Maldives', 'Population': '515,132'}, {'Country': 'Cape Verde', 'Population': '491,233'}, {'Country': 'Brunei', 'Population': '445,400'}, {'Country': 'Belize', 'Population': '441,471'}, {'Country': 'Bahamas', 'Population': '397,360'}, {'Country': 'Iceland', 'Population': '396,960'}, {'Country': 'Northern Cyprus', 'Population': '382,836'}, {'Country': 'Transnistria', 'Population': '360,938'}, {'Country': 'Vanuatu', 'Population': '301,295'}, {'Country': 'French Polynesia (France)', 'Population': '279,890'}, {'Country': 'New Caledonia (France)', 'Population': '268,510'}, {'Country': 'Barbados', 'Population': '267,800'}, {'Country': 'Abkhazia', 'Population': '244,236'}, {'Country': 'São Tomé and Príncipe', 'Population': '214,610'}, {'Country': 'Samoa', 'Population': '205,557'}, {'Country': 'Saint Lucia', 'Population': '178,696'}, {'Country': 'Guam (US)', 'Population': '153,836'}, {'Country': 'Curacao (Netherlands)', 'Population': '148,925'}, {'Country': 'Kiribati', 'Population': '120,740'}, {'Country': 'Grenada', 'Population': '112,579'}, {'Country': 'Saint Vincent and the Grenadines', 'Population': '110,872'}, {'Country': 'Aruba (Netherlands)', 'Population': '106,739'}, {'Country': 'Micronesia', 'Population': '105,754'}, {'Country': 'Jersey (UK)', 'Population': '103,267'}, {'Country': 'Antigua and Barbuda', 'Population': '100,772'}, {'Country': 'Seychelles', 'Population': '100,447'}, {'Country': 'Tonga', 'Population': '100,179'}, {'Country': 'U.S. Virgin Islands (US)', 'Population': '87,146'}, {'Country': 'Andorra', 'Population': '85,101'}, {'Country': 'Isle of Man (UK)', 'Population': '84,069'}, {'Country': 'Cayman Islands (UK)', 'Population': '71,105'}, {'Country': 'Dominica', 'Population': '67,408'}, {'Country': 'Guernsey (UK)', 'Population': '64,091'}, {'Country': 'Bermuda (UK)', 'Population': '64,055'}, {'Country': 'Greenland (Denmark)', 'Population': '56,865'}, {'Country': 'South Ossetia', 'Population': '56,520'}, {'Country': 'Faroe Islands (Denmark)', 'Population': '54,547'}, {'Country': 'American Samoa (US)', 'Population': '49,710'}, {'Country': 'Northern Mariana Islands (US)', 'Population': '47,329'}, {'Country': 'Saint Kitts and Nevis', 'Population': '47,195'}, {'Country': 'Turks and Caicos Islands (UK)', 'Population': '46,131'}, {'Country': 'Sint Maarten (Netherlands)', 'Population': '42,938'}, {'Country': 'Marshall Islands', 'Population': '42,418'}, {'Country': 'Liechtenstein', 'Population': '39,724'}, {'Country': 'Monaco', 'Population': '39,050'}, {'Country': 'Gibraltar (UK)', 'Population': '34,003'}, {'Country': 'San Marino', 'Population': '33,889'}, {'Country': 'Saint Martin (France)', 'Population': '32,358'}, {'Country': 'British Virgin Islands (UK)', 'Population': '31,538'}, {'Country': 'Åland (Finland)', 'Population': '30,547'}, {'Country': 'Palau', 'Population': '16,733'}, {'Country': 'Anguilla (UK)', 'Population': '15,701'}, {'Country': 'Cook Islands', 'Population': '15,040'}, {'Country': 'Nauru', 'Population': '11,680'}, {'Country': 'Wallis and Futuna (France)', 'Population': '11,369'}, {'Country': 'Tuvalu', 'Population': '10,679'}, {'Country': 'Saint Barthélemy (France)', 'Population': '10,585'}, {'Country': 'Saint Pierre and Miquelon (France)', 'Population': '6,092'}, {'Country': 'Saint Helena, Ascension and Tristan da Cunha (UK)', 'Population': '5,651'}, {'Country': 'Montserrat (UK)', 'Population': '4,433'}, {'Country': 'Falkland Islands (UK)', 'Population': '3,662'}, {'Country': 'Norfolk Island (Australia)', 'Population': '2,188'}, {'Country': 'Christmas Island (Australia)', 'Population': '1,692'}, {'Country': 'Niue', 'Population': '1,689'}, {'Country': 'Tokelau (NZ)', 'Population': '1,647'}, {'Country': 'Vatican City', 'Population': '764'}, {'Country': 'Cocos (Keeling) Islands (Australia)', 'Population': '593'}, {'Country': 'Pitcairn Islands (UK)', 'Population': '47'}]\n"
+          ]
+        }
+      ],
+      "source": [
+        "import requests\n",
+        "from bs4 import BeautifulSoup\n",
+        "import csv\n",
+        "\n",
+        "def scrape_wikipedia_table(url):\n",
+        "    # Send a GET request to the URL\n",
+        "    response = requests.get(url)\n",
+        "\n",
+        "    # Check if the request was successful\n",
+        "    if response.status_code == 200:\n",
+        "        # Parse the HTML content\n",
+        "        soup = BeautifulSoup(response.text, 'html.parser')\n",
+        "\n",
+        "        # Find the table containing population data\n",
+        "        table = soup.find('table', {'class': 'wikitable'})\n",
+        "\n",
+        "        # Check if table exists\n",
+        "        if table:\n",
+        "            # Initialize a list to store data\n",
+        "            data = []\n",
+        "\n",
+        "            # Find all rows in the table except the header row\n",
+        "            rows = table.find_all('tr')[1:]\n",
+        "\n",
+        "            # Iterate through each row\n",
+        "            for row in rows:\n",
+        "                # Extract data from each cell in the row\n",
+        "                cells = row.find_all(['th', 'td'])\n",
+        "                country = cells[1].text.strip()\n",
+        "                population = cells[2].text.strip()\n",
+        "                # Add data to the list\n",
+        "                data.append({'Country': country, 'Population': population})\n",
+        "\n",
+        "            return data\n",
+        "        else:\n",
+        "            print(\"Table not found on the page.\")\n",
+        "    else:\n",
+        "        print(\"Failed to retrieve the page.\")\n",
+        "\n",
+        "def save_to_csv(data, filename):\n",
+        "    # Specify the field names\n",
+        "    fieldnames = ['Country', 'Population']\n",
+        "\n",
+        "    # Write data to CSV file\n",
+        "    with open(filename, mode='w', newline='', encoding='utf-8') as file:\n",
+        "        writer = csv.DictWriter(file, fieldnames=fieldnames)\n",
+        "\n",
+        "        # Write header\n",
+        "        writer.writeheader()\n",
+        "\n",
+        "        # Write rows\n",
+        "        for row in data:\n",
+        "            writer.writerow(row)\n",
+        "\n",
+        "# Main function to execute the program\n",
+        "def main():\n",
+        "    # URL of the Wikipedia page\n",
+        "    url = \"https://en.wikipedia.org/wiki/List_of_countries_and_dependencies_by_population\"\n",
+        "\n",
+        "    # Scrape the Wikipedia table\n",
+        "    data = scrape_wikipedia_table(url)\n",
+        "\n",
+        "    # Check if data is not empty\n",
+        "    if data:\n",
+        "        # Save data to CSV file\n",
+        "        save_to_csv(data, 'population_data.csv')\n",
+        "        print(data)\n",
+        "    else:\n",
+        "        print(\"No data retrieved.\")\n",
+        "\n",
+        "if __name__ == \"__main__\":\n",
+        "    main()\n",
+        "\n",
+        "\n"
+      ]
+    }
+  ]
+}
